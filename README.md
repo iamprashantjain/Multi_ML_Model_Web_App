@@ -1,0 +1,1 @@
+How to take a Machine Learning Model you’ve created and turn it into a simple app using Streamlit.The goal will be to use the features present in the dataset to predict the Price of Old Vehicles. In this Project I've used 4 models : Commercial Vehicles & Two Wheelers. Dataset is very large so unable to upload here.
