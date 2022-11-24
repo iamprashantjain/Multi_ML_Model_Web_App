@@ -25,7 +25,7 @@ user_menu = st.sidebar.selectbox('Select Options',('CV (CS)','CV (NCS)','2W (CS)
 
 
 if user_menu == "CV (CS)":
-	df = pd.read_csv('model_data.csv',encoding='latin-1')
+	df = pd.read_csv('model_data.csv',encoding='latin-1',low_memory=False)
 	loaded_model=pickle.load(open('regressor_CV_CS.pkl','rb'))
 
 	
@@ -83,7 +83,7 @@ if user_menu == "CV (CS)":
 
 elif user_menu == "CV (NCS)":
 
-	df = pd.read_csv('Final_CV_NCS.csv',encoding='latin-1')
+	df = pd.read_csv('Final_CV_NCS.csv',encoding='latin-1',low_memory=False)
 	loaded_model=pickle.load(open('regressor.pkl','rb'))
 
 	st.title("Commercial Vehicle Price Prediction Tool (NCS)")
@@ -133,7 +133,7 @@ elif user_menu == "CV (NCS)":
 
 
 elif user_menu == "2W (CS)":
-	df = pd.read_csv('model_data_2w_cs.csv',encoding='latin-1')
+	df = pd.read_csv('model_data_2w_cs.csv',encoding='latin-1',low_memory=False)
 	loaded_model=pickle.load(open('regressor_2w_cs.pkl','rb'))
 
 	st.title("Two Wheeler Price Prediction (CS)")
@@ -182,7 +182,7 @@ elif user_menu == "2W (CS)":
 
 
 elif user_menu == "2W (NCS)":
-	df = pd.read_csv('model_data_2w_ncs.csv',encoding='latin-1')
+	df = pd.read_csv('model_data_2w_ncs.csv',encoding='latin-1',low_memory=False)
 	loaded_model=pickle.load(open('regressor_2w_ncs.pkl','rb'))
 
 	st.title("Two Wheeler Price Prediction (NCS)")
