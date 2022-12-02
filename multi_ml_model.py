@@ -313,7 +313,7 @@ elif user_menu == "FE (NCS)":
 	FE_State_Clean = col5.selectbox('Select State',fuel,index = 0)
 	
 	
-	X = (pd.DataFrame(columns=['MAKE_YEAR','Make_Clean','Model_Clean','Variant_Clean','FE_State_Clean'],data=np.array([make_year,Make_Clean,Model_Clean,Variant_Clean,FE_State_Clean]).reshape(1,5)))
+	X = (pd.DataFrame(columns=['MAKE_YEAR','Make_Clean','Model_Clean','Variant_Clean','FE_State_Clean'],data=np.array([MAKE_YEAR,Make_Clean,Model_Clean,Variant_Clean,FE_State_Clean]).reshape(1,5)))
 
 
 	if st.button('Get the Best Price'):
